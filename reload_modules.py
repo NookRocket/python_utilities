@@ -3,6 +3,7 @@ import importlib
 modules = sys.modules.copy()
 removed_mod = {}
 # Specify the prefix to avoid reload negligible modules
+# e.g. your module start with 'snow.'
 prefix_module = 'snow.'
 
 for key, module in modules.items():
